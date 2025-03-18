@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,13 @@ body {
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
 }
 
 h1, h2, h3 {
@@ -19,20 +27,20 @@ h1, h2, h3 {
 }
 
 a {
-    text-decoration: underline;
-    color: #ca6565;
-    font: bolder;
+    text-decoration: none;
+    color: #c0392b;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #582e2e;
-    
+    color: #8e1f1f;
 }
 
 /* Header */
 header {
-    background-color: #2a3744;
-    color: #0a7f9c;
+    background-color: #34495e;
+    color: #f1f1f1;
     padding: 30px 20px;
     text-align: center;
     border-radius: 15px;
@@ -45,6 +53,21 @@ header h1 {
     letter-spacing: 1px;
 }
 
+/* Dark Mode Toggle */
+#darkModeToggle {
+    padding: 8px 15px;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#darkModeToggle:hover {
+    background: #e67e22;
+}
+
 /* Intro Section */
 .intro {
     display: flex;
@@ -55,11 +78,12 @@ header h1 {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .intro:hover {
     transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .intro img {
@@ -88,7 +112,7 @@ header h1 {
     line-height: 1.8;
 }
 
-/* Skills Section */
+/* Skills & Other Sections */
 .skills, .experience, .projects {
     background-color: #fff;
     margin: 20px 0;
@@ -106,17 +130,6 @@ header h1 {
     font-size: 26px;
     margin-bottom: 15px;
     color: #2980b9;
-}
-
-.skills-list, .exp-list, .project-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li, .exp-list li, .project-list li {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #34495e;
 }
 
 /* Footer */
@@ -157,3 +170,20 @@ header, .intro, .skills, .experience, .projects, footer {
     animation: fadeInUp 1s ease-in-out;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        margin-left: 0;
+    }
+}
