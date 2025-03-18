@@ -53,19 +53,48 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* Dark Mode Toggle */
-#darkModeToggle {
-    padding: 8px 15px;
-    background: #f39c12;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 10px;
+
+
+/* Ensure text remains visible in Dark Mode */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+    color: #f1c40f;  /* Gold text for contrast */
 }
 
-#darkModeToggle:hover {
-    background: #e67e22;
+/* Update sections in Dark Mode */
+.dark-mode .intro,
+.dark-mode .skills,
+.dark-mode .experience,
+.dark-mode .projects {
+    background: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Update footer in Dark Mode */
+.dark-mode footer {
+    background: #1e272e;
+    color: #ecf0f1;
+}
+
+/* Update links in Dark Mode */
+.dark-mode a {
+    color: #f39c12; /* Orange */
+}
+
+.dark-mode a:hover {
+    color: #ffd700; /* Brighter gold */
+}
+
+/* Improve Dark Mode Toggle Button */
+.dark-mode #darkModeToggle {
+    background: #ffcc00; /* Yellow */
+    color: #2c3e50; /* Dark text */
+}
+
+.dark-mode #darkModeToggle:hover {
+    background: #e6b800;
 }
 
 /* Intro Section */
