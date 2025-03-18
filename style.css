@@ -1,164 +1,208 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(135deg, #f1c40f, #e67e22);
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
     color: #333;
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background: #2c3e50;
+    background: #1e272e;
     color: #ecf0f1;
 }
 
+/* Headers */
 h1, h2, h3 {
     color: #fff;
 }
 
+/* Links */
 a {
     text-decoration: none;
-    color: #c0392b;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #e74c3c;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 a:hover {
-    color: #8e1f1f;
+    color: #c0392b;
 }
 
 /* Header */
 header {
-    background-color: #34495e;
-    color: #f1f1f1;
+    background: #2c3e50;
+    color: white;
     padding: 30px 20px;
     text-align: center;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 1px;
 }
 
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
+#darkModeToggle:hover {
+    background: #ddd;
+}
 
-/* Ensure text remains visible in Dark Mode */
+/* Dark Mode Enhancements */
 .dark-mode h1, 
 .dark-mode h2, 
 .dark-mode h3 {
-    color: #f1c40f;  /* Gold text for contrast */
+    color: #f1c40f;
 }
 
-/* Update sections in Dark Mode */
-.dark-mode .intro,
-.dark-mode .skills,
-.dark-mode .experience,
-.dark-mode .projects {
-    background: #34495e;
-    color: #ecf0f1;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-}
-
-/* Update footer in Dark Mode */
-.dark-mode footer {
-    background: #1e272e;
-    color: #ecf0f1;
-}
-
-/* Update links in Dark Mode */
 .dark-mode a {
-    color: #f39c12; /* Orange */
+    color: #f39c12;
 }
 
 .dark-mode a:hover {
-    color: #ffd700; /* Brighter gold */
+    color: #ffd700;
 }
 
-/* Improve Dark Mode Toggle Button */
 .dark-mode #darkModeToggle {
-    background: #ffcc00; /* Yellow */
-    color: #2c3e50; /* Dark text */
+    background: #f39c12;
+    color: #2c3e50;
 }
 
 .dark-mode #darkModeToggle:hover {
     background: #e6b800;
 }
 
-/* Intro Section */
-.intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    background: #fff;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+/* Section Styles */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.intro:hover {
+section:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.intro img {
-    width: 180px;
-    height: 180px;
+/* Dark Mode for Sections */
+.dark-mode section {
+    background: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #f39c12;
+    border: 5px solid #e74c3c;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.intro-text {
+.profile-text {
     max-width: 600px;
-    margin-left: 30px;
 }
 
-.intro-text h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+.profile-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
     color: #2c3e50;
 }
 
-.intro-text p {
+.profile-text p {
     font-size: 18px;
     color: #7f8c8d;
     line-height: 1.8;
 }
 
-/* Skills & Other Sections */
-.skills, .experience, .projects {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.skills:hover, .experience:hover, .projects:hover {
-    transform: scale(1.02);
+.skill {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.skills h3, .experience h3, .projects h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
+.skill:hover {
+    background: #c0392b;
+}
+
+/* Dark Mode for Skills */
+.dark-mode .skill {
+    background: #f39c12;
+    color: #2c3e50;
+}
+
+.dark-mode .skill:hover {
+    background: #d35400;
+}
+
+/* Projects */
+.project {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project h3 {
+    margin-bottom: 8px;
     color: #2980b9;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+/* Dark Mode for Projects */
+.dark-mode .project {
+    background: #2c3e50;
 }
 
 /* Footer */
@@ -167,12 +211,12 @@ footer {
     color: #ecf0f1;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     border-radius: 10px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
+/* Footer Links */
 footer a {
     color: #f39c12;
     font-weight: bold;
@@ -183,11 +227,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Animation */
-@keyframes fadeInUp {
+/* Animations */
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -195,24 +239,27 @@ footer a:hover {
     }
 }
 
-header, .intro, .skills, .experience, .projects, footer {
-    animation: fadeInUp 1s ease-in-out;
+header, section, footer {
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .intro {
+    .profile {
         flex-direction: column;
         text-align: center;
     }
 
-    .intro img {
-        width: 140px;
-        height: 140px;
-        margin-bottom: 15px;
+    .profile img {
+        width: 120px;
+        height: 120px;
     }
 
-    .intro-text {
-        margin-left: 0;
+    .profile-text {
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
     }
 }
