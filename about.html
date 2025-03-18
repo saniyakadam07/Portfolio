@@ -3,43 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="about.css">
-    <script defer src="about.js"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <button id="dark-mode-toggle">🌙</button>
+        <h1>About Me</h1>
+        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
     </header>
-    
-    <section class="intro">
+
+    <!-- Intro Section -->
+    <section class="intro fade-in">
         <img src="profile.jpg" alt="Profile Picture">
         <div class="intro-text">
-            <h2>About Me</h2>
-            <p>I am currently pursuing a <b>Bachelor of Engineering in Information Technology</b> at VESIT. Passionate about web development and AI/ML, I continuously explore innovative technologies.</p>
+            <h2>Who Am I?</h2>
+            <p>
+                I am currently pursuing a <b>Bachelor of Engineering (BE) in Information Technology</b> at Vivekanand Education Society Institute of Technology (VESIT), where I have developed a strong foundation in web development. I am proficient in a variety of programming languages, including **HTML, CSS, Java, JavaScript, Python, C, C++, and PHP**.
+            </p>
+            <p>
+                In addition to my programming skills, I have a solid understanding of **data structures and algorithms (DSA)**, which empowers me to approach complex problems with strategic solutions. My growing interest in **Artificial Intelligence (AI) and Machine Learning (ML)** motivates me to explore innovative applications of these technologies in the future.
+            </p>
+            <p>
+                Driven by a passion for continuous learning and growth, I am eager to pursue opportunities that will enable me to contribute to **cutting-edge projects** and further advance my expertise in **web development and emerging technologies**.
+            </p>
         </div>
     </section>
-    
-    <section class="skills">
+
+    <!-- Skills Section -->
+    <section class="skills fade-in">
         <h3>Skills</h3>
-        <ul class="skills-list">
+        <ul>
             <li>HTML, CSS, JavaScript</li>
+            <li>Tailwind CSS, Bootstrap</li>
             <li>React.js, Node.js</li>
-            <li>Python, Java, C++</li>
-            <li>Machine Learning Basics</li>
+            <li>Python, Java, C, C++, PHP</li>
+            <li>MySQL, MongoDB</li>
+            <li>Machine Learning (Beginner)</li>
+            <li>Data Structures & Algorithms (DSA)</li>
         </ul>
     </section>
-    
-    <section class="projects">
+
+    <!-- Projects Section -->
+    <section class="projects fade-in">
         <h3>Projects</h3>
-        <ul class="project-list">
-            <li><a href="https://saniyakadam07.github.io/Simple-Calculator/" target="_blank">Simple Calculator</a></li>
+        <ul>
+            <li><a href="https://github.com/yourgithub/simple-calculator" target="_blank">Simple Calculator</a></li>
+            <li><a href="https://github.com/yourgithub/food-waste-management" target="_blank">Food Waste Management</a></li>
+            <li><a href="https://github.com/yourgithub/auto-rickshaw-sharing" target="_blank">Auto Rickshaw Sharing</a></li>
         </ul>
     </section>
-    
+
+    <!-- Contact Section -->
+    <section class="contact fade-in">
+        <h3>Contact Me</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Portfolio | <a href="#">Contact Me</a></p>
+        <p>Connect: 
+            <a href="www.linkedin.com/in/saniya-kadam-b55276287" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        </p>
     </footer>
+
+    <script src="about.js"></script>
+
 </body>
 </html>
