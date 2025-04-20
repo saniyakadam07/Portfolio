@@ -121,4 +121,34 @@ form.html
 </body>
 </html>
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 form.js
+
+let users = [];
+
+document
+  .getElementById("loginForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+      alert("Both fields are required!");
+      return;
+    }
+
+    const existingUser = users.find((user) => user.username === username);
+
+    if (existingUser) {
+      alert("User already registered!");
+    } else {
+      users.push({ username, password });
+      console.log("Registered Users:", users);
+
+      document.getElementById("loginForm").reset();
+      alert("You have registered successfully!");
+    }
+  });
