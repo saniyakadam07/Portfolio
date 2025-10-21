@@ -1,418 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saniya Kadam - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">SK</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+      <div class="nav-container">
+        <div class="logo">SK</div>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
+      </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home" class="home">
-        <div class="home-content">
-            <h3>Hello, I'm</h3>
-            <h1>Saniya Kadam</h1>
-            <h2>IT Student & Web Developer</h2>
-            <p>I am currently pursuing BE in Information Technology at VESIT. I have a strong foundation in web development and a growing interest in AI and Machine Learning. Passionate about creating innovative solutions and continuously learning new technologies.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/saniya-kadam-b55276287" target="_blank" title="LinkedIn">in</a>
-                <a href="https://github.com/saniyakadam07" target="_blank" title="GitHub">GH</a>
-                <a href="https://leetcode.com/u/saniyakadam/" target="_blank" title="LeetCode">LC</a>
-                <a href="mailto:saniya.ckadam@gmail.com" title="Email">@</a>
-            </div>
-            <a href="#contact" class="btn">Get In Touch</a>
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Saniya Kadam</h1>
+        <h2>IT Student & Web Developer</h2>
+        <p>
+          I am currently pursuing BE in Information Technology at VESIT. I have
+          a strong foundation in web development and a growing interest in AI
+          and Machine Learning. Passionate about creating innovative solutions
+          and continuously learning new technologies.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/saniya-kadam-b55276287"
+            target="_blank"
+            title="LinkedIn"
+            >in</a
+          >
+          <a
+            href="https://github.com/saniyakadam07"
+            target="_blank"
+            title="GitHub"
+            >GH</a
+          >
+          <a
+            href="https://leetcode.com/u/saniyakadam/"
+            target="_blank"
+            title="LeetCode"
+            >LC</a
+          >
+          <a href="mailto:saniya.ckadam@gmail.com" title="Email">@</a>
         </div>
-        <div class="home-img">
-            <div class="home-img-placeholder">SK</div>
-        </div>
+        <a href="#contact" class="btn">Get In Touch</a>
+      </div>
+      <div class="home-img">
+        <div class="home-img-placeholder">SK</div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-img">
-                <div class="about-img-placeholder">👩‍💻</div>
-            </div>
-            <div class="about-text">
-                <h3>IT Student & Developer</h3>
-                <p>I am currently pursuing a Bachelor of Engineering in Information Technology at Vivekanand Education Society Institute of Technology (VESIT) with a CGPI of 9.12. I have developed a strong foundation in web development and am proficient in various programming languages including HTML, CSS, JavaScript, Java, Python, C, C++, and PHP.</p>
-                <p>In addition to my programming skills, I have a solid understanding of data structures and algorithms, which empowers me to approach complex problems with strategic solutions. My growing interest in Artificial Intelligence and Machine Learning motivates me to explore innovative applications of these technologies.</p>
-                <p>I am also a Junior Reporter at VESITConnect, where I write engaging reports and create visually appealing content for newsletters and magazines. I have completed internships in Data Analytics and Snooker Analytics, gaining hands-on experience with Python, Power BI, YOLO, and OpenCV.</p>
-                
-                <h3 style="margin-top: 2rem; color: var(--secondary);">Education</h3>
-                <div class="education-item">
-                    <h4>B.E. in Information Technology</h4>
-                    <p><strong>Vivekanand Education Society's Institute of Technology</strong></p>
-                    <p>July 2023 - Present | CGPI: 9.12</p>
-                </div>
-                <div class="education-item">
-                    <h4>HSC (Science Stream)</h4>
-                    <p><strong>Arya Gurukul International Junior College</strong></p>
-                    <p>August 2021 - March 2023 | 69.33%</p>
-                </div>
-                <div class="education-item">
-                    <h4>SSC</h4>
-                    <p><strong>Lodha World School</strong></p>
-                    <p>June 2009 - June 2021 | 96.40% | Ranked 1st in school</p>
-                </div>
-            </div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-img">
+          <div class="about-img-placeholder">👩‍💻</div>
         </div>
+        <div class="about-text">
+          <h3>IT Student & Developer</h3>
+          <p>
+            I am currently pursuing a Bachelor of Engineering in Information
+            Technology at Vivekanand Education Society Institute of Technology
+            (VESIT) with a CGPI of 9.12. I have developed a strong foundation in
+            web development and am proficient in various programming languages
+            including HTML, CSS, JavaScript, Java, Python, C, C++, and PHP.
+          </p>
+          <p>
+            In addition to my programming skills, I have a solid understanding
+            of data structures and algorithms, which empowers me to approach
+            complex problems with strategic solutions. My growing interest in
+            Artificial Intelligence and Machine Learning motivates me to explore
+            innovative applications of these technologies.
+          </p>
+          <p>
+            I am also a Junior Reporter at VESITConnect, where I write engaging
+            reports and create visually appealing content for newsletters and
+            magazines. I have completed internships in Data Analytics and
+            Snooker Analytics, gaining hands-on experience with Python, Power
+            BI, YOLO, and OpenCV.
+          </p>
+
+          <h3 style="margin-top: 2rem; color: var(--secondary)">Education</h3>
+          <div class="education-item">
+            <h4>B.E. in Information Technology</h4>
+            <p>
+              <strong
+                >Vivekanand Education Society's Institute of Technology</strong
+              >
+            </p>
+            <p>July 2023 - Present | CGPI: 9.12</p>
+          </div>
+          <div class="education-item">
+            <h4>HSC (Science Stream)</h4>
+            <p><strong>Arya Gurukul International Junior College</strong></p>
+            <p>August 2021 - March 2023 | 69.33%</p>
+          </div>
+          <div class="education-item">
+            <h4>SSC</h4>
+            <p><strong>Lodha World School</strong></p>
+            <p>June 2009 - June 2021 | 96.40% | Ranked 1st in school</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Java</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Python</span><span>80%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>JavaScript</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>C/C++</span><span>75%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>SQL</span><span>80%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>HTML/CSS</span><span>90%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-                </div>
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-item">
+            <div class="skill-name"><span>Java</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
             </div>
-
-            <div class="skill-category">
-                <h3>Frameworks & Tools</h3>
-                <div class="skill-item">
-                    <div class="skill-name"><span>React.js</span><span>80%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Node.js</span><span>75%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>OpenCV</span><span>70%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Git</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Power BI</span><span>75%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Firebase</span><span>70%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
-                </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Python</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
             </div>
-
-            <div class="skill-category">
-                <h3>Cloud & Design</h3>
-                <div class="skill-item">
-                    <div class="skill-name"><span>AWS</span><span>70%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Google Cloud</span><span>65%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Docker</span><span>60%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="60"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Figma</span><span>75%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Canva</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Adobe InDesign</span><span>70%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
-                </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>JavaScript</span><span>85%</span>
             </div>
-
-            <div class="skill-category">
-                <h3>Core Competencies</h3>
-                <div class="skill-item">
-                    <div class="skill-name"><span>DSA</span><span>80%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>DBMS</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Computer Vision</span><span>75%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Data Analytics</span><span>80%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Problem Solving</span><span>85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name"><span>Leadership</span><span>90%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-                </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
             </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>C/C++</span><span>75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>SQL</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>HTML/CSS</span><span>90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
         </div>
+
+        <div class="skill-category">
+          <h3>Frameworks & Tools</h3>
+          <div class="skill-item">
+            <div class="skill-name"><span>React.js</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Node.js</span><span>75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>OpenCV</span><span>70%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Git</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Power BI</span><span>75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Firebase</span><span>70%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Cloud & Design</h3>
+          <div class="skill-item">
+            <div class="skill-name"><span>AWS</span><span>70%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Google Cloud</span><span>65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Docker</span><span>60%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="60"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Figma</span><span>75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Canva</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Adobe InDesign</span><span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Core Competencies</h3>
+          <div class="skill-item">
+            <div class="skill-name"><span>DSA</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>DBMS</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Computer Vision</span><span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Data Analytics</span><span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Problem Solving</span><span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Leadership</span><span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>SwapSavvy</h3>
-                    <p>Peer-to-Peer Skill Bartering Platform</p>
-                </div>
-                <div class="project-body">
-                    <p>A full-stack web application designed for peer-to-peer skill bartering. Users can post skills, propose exchanges, and manage swap status with a secure backend and dynamic frontend.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Express.js</span>
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Node.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://swapsavvy-frontend.onrender.com/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/saniyakadam07" target="_blank">GitHub</a>
-                    </div>
-                </div>
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>SwapSavvy</h3>
+            <p>Peer-to-Peer Skill Bartering Platform</p>
+          </div>
+          <div class="project-body">
+            <p>
+              A full-stack web application designed for peer-to-peer skill
+              bartering. Users can post skills, propose exchanges, and manage
+              swap status with a secure backend and dynamic frontend.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
             </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>GreenFork</h3>
-                    <p>Food Waste Management Platform</p>
-                </div>
-                <div class="project-body">
-                    <p>A platform connecting hotels and restaurants with NGOs and seekers to reduce food waste. Businesses can list excess food, allowing seekers to purchase it at minimal cost while promoting sustainability.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">Tailwind</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Firebase</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://greenfork-jade.vercel.app/index.html" target="_blank">Live Demo</a>
-                        <a href="https://github.com/saniyakadam07" target="_blank">GitHub</a>
-                    </div>
-                </div>
+            <div class="project-links">
+              <a href="https://swapsavvy-frontend.onrender.com/" target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/saniyakadam07" target="_blank"
+                >GitHub</a
+              >
             </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Expense Tracker</h3>
-                    <p>Personal Finance Management App</p>
-                </div>
-                <div class="project-body">
-                    <p>A web application that helps users manage their finances effectively. Users can add, delete, and modify expenses, categorize them, and visualize spending patterns with an interactive interface.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Express.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/saniyakadam07/Expense-Tracker.git" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>ParkEasy</h3>
-                    <p>Parking Reservation System</p>
-                </div>
-                <div class="project-body">
-                    <p>ParkEasy connects parking space owners with seekers in urban societies. Owners can list their available spots, while seekers can easily search and book in real-time through a user-friendly interface.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/saniyakadam07" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Simple Calculator</h3>
-                    <p>Basic Arithmetic Calculator</p>
-                </div>
-                <div class="project-body">
-                    <p>A simple calculator designed for performing basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://saniyakadam07.github.io/Simple-Calculator/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/saniyakadam07" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>GreenFork</h3>
+            <p>Food Waste Management Platform</p>
+          </div>
+          <div class="project-body">
+            <p>
+              A platform connecting hotels and restaurants with NGOs and seekers
+              to reduce food waste. Businesses can list excess food, allowing
+              seekers to purchase it at minimal cost while promoting
+              sustainability.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://greenfork-jade.vercel.app/index.html"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/saniyakadam07" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Expense Tracker</h3>
+            <p>Personal Finance Management App</p>
+          </div>
+          <div class="project-body">
+            <p>
+              A web application that helps users manage their finances
+              effectively. Users can add, delete, and modify expenses,
+              categorize them, and visualize spending patterns with an
+              interactive interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express.js</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/saniyakadam07/Expense-Tracker.git"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>ParkEasy</h3>
+            <p>Parking Reservation System</p>
+          </div>
+          <div class="project-body">
+            <p>
+              ParkEasy connects parking space owners with seekers in urban
+              societies. Owners can list their available spots, while seekers
+              can easily search and book in real-time through a user-friendly
+              interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/saniyakadam07" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Simple Calculator</h3>
+            <p>Basic Arithmetic Calculator</p>
+          </div>
+          <div class="project-body">
+            <p>
+              A simple calculator designed for performing basic arithmetic
+              operations like addition, subtraction, multiplication, and
+              division with a clean and user-friendly interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://saniyakadam07.github.io/Simple-Calculator/"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/saniyakadam07" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-        <h2 class="section-title">Experience & Achievements</h2>
-        
-        <h3 style="color: var(--primary); margin-bottom: 2rem; font-size: 1.8rem;">Work Experience</h3>
-        <div class="experience-timeline">
-            <div class="experience-item">
-                <h3>Snooker Analytics Intern</h3>
-                <h4>Vision Sports Reconnect Pvt. Ltd | June 2025 – Oct 2025</h4>
-                <p>Developed a computer vision system using YOLO and OpenCV to detect and track snooker balls with 98% accuracy. Created and processed a dataset of 100+ images and built real-time video analytics pipelines for live detection and event tracking, enhancing sports performance analysis.</p>
-            </div>
+      <h2 class="section-title">Experience & Achievements</h2>
 
-            <div class="experience-item">
-                <h3>Data Analytics Intern</h3>
-                <h4>Electrolyte Solutions Pvt. Ltd | May 2025 - August 2025</h4>
-                <p>Optimized CRM data handling by automating manual processes using Python and Excel. Collaborated with the team to design and implement data pipelines that reduce redundancy and improve reporting speed. Built interactive Power BI dashboards with pivots, slicers, and charts to deliver actionable insights.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Junior Reporter</h3>
-                <h4>VESITConnect | February 2024 - August 2025</h4>
-                <p>Responsible for writing engaging reports and creating visually appealing articles for newsletters and magazines. Collaborated with the team to ensure content is informative, accurate, and aligns with the publication's goals. Designed layouts to enhance overall reader experience.</p>
-            </div>
+      <h3 style="color: var(--primary); margin-bottom: 2rem; font-size: 1.8rem">
+        Work Experience
+      </h3>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <h3>Snooker Analytics Intern</h3>
+          <h4>Vision Sports Reconnect Pvt. Ltd | June 2025 – Oct 2025</h4>
+          <p>
+            Developed a computer vision system using YOLO and OpenCV to detect
+            and track snooker balls with 98% accuracy. Created and processed a
+            dataset of 100+ images and built real-time video analytics pipelines
+            for live detection and event tracking, enhancing sports performance
+            analysis.
+          </p>
         </div>
 
-        <h3 style="color: var(--primary); margin: 3rem 0 2rem; font-size: 1.8rem;">Achievements</h3>
-        <div class="achievements-grid">
-            <div class="achievement-card">
-                <p>AWS Certified Cloud Practitioner – Amazon Web Services (2025)</p>
-            </div>
-            <div class="achievement-card">
-                <p>School Ranker in the SSC Examination with 96.40%</p>
-            </div>
-            <div class="achievement-card">
-                <p>Top 6 Winner of Summer Course Challenge 2024 by VESIT IT Department</p>
-            </div>
-            <div class="achievement-card">
-                <p>Awarded 50 Days Badge (2024) on LeetCode - Solved 200+ coding problems</p>
-            </div>
-            <div class="achievement-card">
-                <p>Winner (Girls' Chess) at Sphurthi 2025, Annual Sports Fest of VESIT</p>
-            </div>
-            <div class="achievement-card">
-                <p>House Captain of Ananta House - Led 250 students to consecutive wins</p>
-            </div>
-            <div class="achievement-card">
-                <p>Inter-House Chess Competition Winner for three consecutive years</p>
-            </div>
-            <div class="achievement-card">
-                <p>Participant at Hack-AI-thon 3.0 - 24-hour online hackathon by AI-Colegion</p>
-            </div>
-            <div class="achievement-card">
-                <p>Featured in Vishwakarma (Annual College Magazine) as Report Designer</p>
-            </div>
+        <div class="experience-item">
+          <h3>Data Analytics Intern</h3>
+          <h4>Electrolyte Solutions Pvt. Ltd | May 2025 - August 2025</h4>
+          <p>
+            Optimized CRM data handling by automating manual processes using
+            Python and Excel. Collaborated with the team to design and implement
+            data pipelines that reduce redundancy and improve reporting speed.
+            Built interactive Power BI dashboards with pivots, slicers, and
+            charts to deliver actionable insights.
+          </p>
         </div>
+
+        <div class="experience-item">
+          <h3>Junior Reporter</h3>
+          <h4>VESITConnect | February 2024 - August 2025</h4>
+          <p>
+            Responsible for writing engaging reports and creating visually
+            appealing articles for newsletters and magazines. Collaborated with
+            the team to ensure content is informative, accurate, and aligns with
+            the publication's goals. Designed layouts to enhance overall reader
+            experience.
+          </p>
+        </div>
+      </div>
+
+      <h3 style="color: var(--primary); margin: 3rem 0 2rem; font-size: 1.8rem">
+        Achievements
+      </h3>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <p>AWS Certified Cloud Practitioner – Amazon Web Services (2025)</p>
+        </div>
+        <div class="achievement-card">
+          <p>School Ranker in the SSC Examination with 96.40%</p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Top 6 Winner of Summer Course Challenge 2024 by VESIT IT Department
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Awarded 50 Days Badge (2024) on LeetCode - Solved 200+ coding
+            problems
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Winner (Girls' Chess) at Sphurthi 2025, Annual Sports Fest of VESIT
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            House Captain of Ananta House - Led 250 students to consecutive wins
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Inter-House Chess Competition Winner for three consecutive years
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Participant at Hack-AI-thon 3.0 - 24-hour online hackathon by
+            AI-Colegion
+          </p>
+        </div>
+        <div class="achievement-card">
+          <p>
+            Featured in Vishwakarma (Annual College Magazine) as Report Designer
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="mailto:saniya.ckadam@gmail.com">saniya.ckadam@gmail.com</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+919321124173">+91 9321124173</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Thane, Maharashtra, India</p>
-                </div>
-            </div>
-
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <a href="mailto:saniya.ckadam@gmail.com">saniya.ckadam@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Phone</h3>
+            <a href="tel:+919321124173">+91 9321124173</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Location</h3>
+            <p>Thane, Maharashtra, India</p>
+          </div>
         </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Saniya Kadam. All rights reserved.</p>
+      <p>&copy; 2025 Saniya Kadam. All rights reserved.</p>
     </footer>
 
     <!-- Scroll to Top Button -->
     <div class="scroll-top" id="scrollTop">↑</div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
